@@ -1,0 +1,94 @@
+/*
+Theme Name:  OddJobs Child
+Theme URI:   https://example.com/oddjobs
+Description: Child theme for the OddJobs marketplace. Extends WPico with brand fonts, colors, and Google Analytics support.
+Author:      OddJobs
+Template:    wpico
+Version:     1.0.0
+License:     GPL-2.0+
+Tags:        child-theme, oddjobs, marketplace
+*/
+
+/* ── Design tokens ───────────────────────────────────────────────────────── */
+:root {
+  /* Brand colours */
+  --color-primary:      #2E86AB;   /* ocean blue  – employer CTA  */
+  --color-primary-dark: #236d8c;
+  --color-secondary:    #F6AE2D;   /* warm gold   – provider CTA  */
+  --color-secondary-dark: #d99610;
+  --color-accent:       #F26419;   /* burnt orange – highlights   */
+  --color-success:      #28A745;
+  --color-danger:       #DC3545;
+  --color-warning:      #FFC107;
+
+  /* Neutrals */
+  --color-bg:           #F4F7FA;
+  --color-surface:      #FFFFFF;
+  --color-border:       #E2E8F0;
+  --color-text:         #1E293B;
+  --color-text-muted:   #64748B;
+
+  /* Typography */
+  --font-heading: 'Poppins', system-ui, sans-serif;
+  --font-body:    'Open Sans', system-ui, sans-serif;
+  --font-mono:    'Fira Code', ui-monospace, monospace;
+
+  /* Spacing & shape */
+  --radius-sm:  4px;
+  --radius-md:  8px;
+  --radius-lg: 16px;
+  --shadow-sm:  0 1px 3px rgba(0,0,0,.08);
+  --shadow-md:  0 4px 12px rgba(0,0,0,.1);
+  --shadow-lg:  0 8px 24px rgba(0,0,0,.12);
+
+  /* Pico CSS overrides (used by wpico parent) */
+  --pico-font-family-sans-serif: var(--font-body);
+  --pico-font-family-monospace: var(--font-mono);
+  --pico-primary: var(--color-primary);
+  --pico-primary-hover: var(--color-primary-dark);
+  --pico-background-color: var(--color-bg);
+  --pico-color: var(--color-text);
+  --pico-border-radius: var(--radius-md);
+}
+
+/* ── Base overrides ──────────────────────────────────────────────────────── */
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-text);
+  font-weight: 700;
+}
+
+a {
+  color: var(--color-primary);
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+/* Site header accent strip */
+header.site-header,
+#masthead {
+  border-top: 4px solid var(--color-primary);
+}
+
+/* Buttons */
+.wp-block-button__link,
+button,
+input[type="submit"] {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.wp-block-button__link:hover,
+button:hover,
+input[type="submit"]:hover {
+  background-color: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
+}
