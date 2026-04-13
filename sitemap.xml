@@ -12,7 +12,52 @@
     </url>
     <url>
         <loc>
-            http://localhost:8000/sample-page/
+            http://localhost:8000/odd-jobs-registration/
+        </loc>
+    </url>
+    <url>
+        <loc>
+            http://localhost:8000/shop/
+        </loc>
+    </url>
+    <url>
+        <loc>
+            http://localhost:8000/cart/
+        </loc>
+    </url>
+    <url>
+        <loc>
+            http://localhost:8000/checkout/
+        </loc>
+    </url>
+    <url>
+        <loc>
+            http://localhost:8000/my-account/
+        </loc>
+    </url>
+    <url>
+        <loc>
+            http://localhost:8000/odd-jobs/lawn-mowing-garden-tidy/
+        </loc>
+    </url>
+    <url>
+        <loc>
+            http://localhost:8000/odd-jobs/dog-walking-pet-care/
+        </loc>
+    </url>
+    <url>
+        <loc>
+            http://localhost:8000/odd-jobs/car-washing-interior-detailing/
+        </loc>
+    </url>
+    <url>
+        <loc>
+            http://localhost:8000/odd-jobs/house-cleaning-decluttering/
+        </loc>
+    </url>
+    <url>
+        <loc>
+            http://localhost:8000/odd-jobs/grocery-shopping-general-errands/
         </loc>
     </url>
     <url>

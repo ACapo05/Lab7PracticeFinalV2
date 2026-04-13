@@ -1,0 +1,57 @@
+/*
+ * OddJobs Marketplace — Admin styles
+ * Applied to wp-admin pages under the OddJobs menu.
+ */
+
+/* ── Status badges ───────────────────────────────────────────────────────── */
+
+.oddjobs-badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.oddjobs-badge--pending {
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fcd34d;
+}
+
+.oddjobs-badge--approved {
+  background: #d1fae5;
+  color: #065f46;
+  border: 1px solid #6ee7b7;
+}
+
+.oddjobs-badge--rejected {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+}
+
+/* ── Table tweaks ─────────────────────────────────────────────────────────── */
+
+#wpbody .wp-list-table td,
+#wpbody .wp-list-table th {
+  vertical-align: middle;
+}
+
+#wpbody .wp-list-table details summary {
+  color: #2271b1;
+  cursor: pointer;
+  font-size: 0.88rem;
+}
+
+#wpbody .wp-list-table details blockquote {
+  margin: 0.5rem 0 0;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  border-left: 3px solid #ddd;
+  padding-left: 0.75rem;
+  color: #3c434a;
+}
